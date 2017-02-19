@@ -6,11 +6,10 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1280
 
 # Inherit some common Tesla stuff.
-$(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+$(call inherit-product, vendor/reaper/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/reaper/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
@@ -26,4 +25,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="flounder-user 7.1.1 N4F26Q 3623443 release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Filip A(slebit)"
+	DEVICE_MAINTAINERS="Dustin Winings(D-FUSE)"
